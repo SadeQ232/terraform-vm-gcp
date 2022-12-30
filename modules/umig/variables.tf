@@ -22,7 +22,6 @@ variable "project_id" {
 
 variable "network" {
   description = "Network to deploy to. Only one of network or subnetwork should be specified."
-  type        = string
   default     = ""
 }
 
@@ -33,13 +32,11 @@ variable "region" {
 
 variable "subnetwork" {
   description = "Subnet to deploy to. Only one of network or subnetwork should be specified."
-  type        = string
   default     = ""
 }
 
 variable "subnetwork_project" {
   description = "The project that subnetwork belongs to"
-  type        = string
   default     = ""
 }
 
@@ -63,7 +60,6 @@ variable "additional_networks" {
 
 variable "hostname" {
   description = "Hostname of instances"
-  type        = string
   default     = ""
 }
 
@@ -75,7 +71,6 @@ variable "static_ips" {
 
 variable "num_instances" {
   description = "Number of instances to create. This value is ignored if static_ips is provided."
-  type        = string
   default     = "1"
 }
 
@@ -90,7 +85,6 @@ variable "named_ports" {
 
 variable "instance_template" {
   description = "Instance template self_link used to create compute instances"
-  type        = string
 }
 
 variable "access_config" {
