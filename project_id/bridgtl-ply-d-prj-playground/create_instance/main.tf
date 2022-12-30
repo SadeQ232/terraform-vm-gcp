@@ -24,7 +24,6 @@ module "instance_template" {
 
 module "compute_instance" {
   source              = "../../../modules/compute_instance"
-  version             = "7.9.0"
   region              = var.region
   zone                = var.zone
   subnetwork          = var.subnetwork
