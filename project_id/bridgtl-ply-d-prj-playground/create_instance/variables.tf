@@ -19,6 +19,7 @@
 variable "project_id" {
   description = "The GCP project to use for integration tests"
   type        = string
+  default     = "bridgtl-ply-d-prj-playground"
 }
 
 variable "region" {
@@ -35,10 +36,14 @@ variable "zone" {
 
 variable "subnetwork" {
   description = "The subnetwork selflink to host the compute instances in"
+  type        = string
+  default     = "https://www.googleapis.com/compute/v1/projects/bridgtl-ply-d-prj-playground/regions/us-central1/subnetworks/default"
 }
 
 variable "num_instances" {
   description = "Number of instances to create"
+  type        = string
+  default     = "1"
 }
 
 variable "nat_ip" {
